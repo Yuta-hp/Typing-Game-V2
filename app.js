@@ -15,6 +15,8 @@ Q_strs = GetShuffleArray(Q_strs);
 
 Q_strs.length = 8;
 
+Q_strs[Q_strs.length] = ["終わり","owari"];
+
 let Q_index = 0;
 
 let Q_T;
@@ -55,16 +57,12 @@ function Next() {
     }
     else
     {
-        [Q_T,I_T] = ["終わり",""];
+        // [Q_T,I_T] = ["終わり",""];
 
         input.value = "";
 
-        Q_index++;
+        // Q_index++;
         dk.textContent = Q_T;
-
-        // for(let i = 0; i < dr.children.length; i++){
-        //     dr.children[i].remove();
-        // }
 
         while(dr.lastChild){
             dr.removeChild(dr.lastChild);
@@ -72,13 +70,13 @@ function Next() {
 
         let text = I_T.split("");
 
-        text.forEach((c) => {
-            let cs = document.createElement("span");
+        // text.forEach((c) => {
+        //     let cs = document.createElement("span");
 
-            cs.innerText = c;
+        //     cs.innerText = c;
 
-            dr.appendChild(cs);
-        })
+        //     dr.appendChild(cs);
+        // })
 
         input.style.display = "none"
 
@@ -89,6 +87,19 @@ function Next() {
             textes[i].style.color = "#fff";
             textes[i].style.fontWeight = "normal";
         }
+
+        let container = document.getElementById("container");
+
+        let rb = document.createElement("button");
+
+        rb.innerText = "もう一度やる";
+        rb.style.fontSize = "30px"
+
+        rb.onclick = () => {
+            document.location.reload();
+        }
+
+        container.appendChild(rb);
     }
 }
 
