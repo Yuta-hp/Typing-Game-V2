@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>タイピングゲーム</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="type-display" id="type-display">
+            <div id="kangi"></div>
+            <div id="ro-mazi"></div>
+        </div>
+        <textarea class="type-input" id="type-input" autofocus></textarea>
+    </div>
+
+    <div id="keyboard">
+        <div class="key-">
+            <div class="h5 w10 key">Esc</div>
+            <div class="h5 w10 key">F1</div>
+            <div class="h5 w10 key">F2</div>
+            <div class="h5 w10 key">F3</div>
+            <div class="h5 w10 key">F4</div>
+            <div class="h5 w10 key">F5</div>
+            <div class="h5 w10 key">F6</div>
+            <div class="h5 w10 key">F7</div>
+            <div class="h5 w10 key">F8</div>
+            <div class="h5 w10 key">F9</div>
+            <div class="h5 w10 key">F10</div>
+            <div class="h5 w10 key">F11</div>
+            <div class="h5 w10 key">F12</div>
+        </div>
+        <div class="key-">
+            <div class="h10 w10 key">半/全</div>
+            <div class="h10 w10 key" id="1-key">1</div>
+            <div class="h10 w10 key" id="2-key">2</div>
+            <div class="h10 w10 key" id="3-key">3</div>
+            <div class="h10 w10 key" id="4-key">4</div>
+            <div class="h10 w10 key" id="5-key">5</div>
+            <div class="h10 w10 key" id="6-key">6</div>
+            <div class="h10 w10 key" id="7-key">7</div>
+            <div class="h10 w10 key" id="8-key">8</div>
+            <div class="h10 w10 key" id="9-key">9</div>
+            <div class="h10 w10 key" id="0-key">0</div>
+            <div class="h10 w10 key" id="--key">-</div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key" id="bs-key">BS</div>
+        </div>
+        <div class="key-">
+            <div class="h10 w10 key">Tab</div>
+            <div class="h10 w10 key" id="q-key">Q</div>
+            <div class="h10 w10 key" id="w-key">W</div>
+            <div class="h10 w10 key" id="e-key">E</div>
+            <div class="h10 w10 key" id="r-key">R</div>
+            <div class="h10 w10 key" id="t-key">T</div>
+            <div class="h10 w10 key" id="y-key">Y</div>
+            <div class="h10 w10 key" id="u-key">U</div>
+            <div class="h10 w10 key" id="i-key">I</div>
+            <div class="h10 w10 key" id="o-key">O</div>
+            <div class="h10 w10 key" id="p-key">P</div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key"></div>
+        </div>
+        <div class="key-">
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key" id="a-key">A</div>
+            <div class="h10 w10 key" id="s-key">S</div>
+            <div class="h10 w10 key" id="d-key">D</div>
+            <div class="h10 w10 key" id="f-key">F</div>
+            <div class="h10 w10 key" id="g-key">G</div>
+            <div class="h10 w10 key" id="h-key">H</div>
+            <div class="h10 w10 key" id="j-key">J</div>
+            <div class="h10 w10 key" id="k-key">K</div>
+            <div class="h10 w10 key" id="l-key">L</div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key"></div>
+        </div>
+        <div class="key-">
+            <div class="h10 key" style="width:220px;" id="sh-key">Shift</div>
+            <div class="h10 w10 key" id="z-key">Z</div>
+            <div class="h10 w10 key" id="x-key">X</div>
+            <div class="h10 w10 key" id="c-key">C</div>
+            <div class="h10 w10 key" id="v-key">V</div>
+            <div class="h10 w10 key" id="b-key">B</div>
+            <div class="h10 w10 key" id="n-key">N</div>
+            <div class="h10 w10 key" id="m-key">M</div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 key" style="width: 220px;" id="sh-key">Shift</div>
+        </div>
+        <div class="key-">
+            <div class="h10 w10 key" >Ctrl</div>
+            <div class="h10 w10 key" ></div>
+            <div class="h10 w10 key" >Alt</div>
+            <div class="h10 w10 key" >無変換</div>
+            <div class="h10 w10 key" style="width: 580px;" id="sp-key"></div>
+            <div class="h10 w10 key">変換</div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key">Alt</div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key"></div>
+            <div class="h10 w10 key">Ctrl</div>
+        </div>
+    </div>
+
+    <script src="q.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
