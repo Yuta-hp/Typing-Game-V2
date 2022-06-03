@@ -109,3 +109,27 @@ body{
 .w10{
     width: 100px;
 }
+
+.yubi{
+    width: 100px;
+    height: 300px;
+    border-radius: 8px;
+
+    margin-right: 20px;
+}
+
+.yubi-a{
+    background-color: #494b4f;
+}
+
+#yubi-div{
+    display: flex;
+    margin-left: 130px;
+}
+.oyayubi{
+    width: 240px;
+    height: 300px;
+    border-radius: 8px;
+
+    background-color:transparent;
+}

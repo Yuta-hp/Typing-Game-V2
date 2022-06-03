@@ -145,6 +145,73 @@ function key() {
             }
             break;
     }
+
+    let yubi = document.getElementsByClassName("yubi");
+
+    yubi[0].style.backgroundColor = "#a11";
+    yubi[1].style.backgroundColor = "#fa1";
+    yubi[2].style.backgroundColor = "#ff1";
+    yubi[3].style.backgroundColor = "#af1";
+    yubi[4].style.backgroundColor = "#af1";
+    yubi[5].style.backgroundColor = "#ff1";
+    yubi[6].style.backgroundColor = "#fa1";
+    yubi[7].style.backgroundColor = "#a11";
+
+    switch (dr.children[input.value.length].innerHTML.toLowerCase()) {
+        case "1":
+        case "q":
+        case "a":
+        case "z":
+            yubi[0].style.backgroundColor = "#aaa";
+            break;
+        case "2":
+        case "w":
+        case "s":
+        case "x":
+            yubi[1].style.backgroundColor = "#aaa";
+            break;
+        case "3":
+        case "e":
+        case "d":
+        case "x":
+            yubi[2].style.backgroundColor = "#aaa";
+            break;
+        case "4":
+        case "r":
+        case "f":
+        case "c":
+        case "5":
+        case "t":
+        case "g":
+        case "v":
+            yubi[3].style.backgroundColor = "#aaa";
+            break;
+        case "6":
+        case "y":
+        case "h":
+        case "n":
+        case "7":
+        case "u":
+        case "j":
+        case "m":
+            yubi[4].style.backgroundColor = "#aaa";
+            break;
+        case "8":
+        case "i":
+        case "k":
+            yubi[5].style.backgroundColor = "#aaa";
+            break;
+        case "9":
+        case "o":
+        case "l":
+            yubi[6].style.backgroundColor = "#aaa";
+            break;
+        case "0":
+        case "p":
+            yubi[7].style.backgroundColor = "#aaa";
+            break;
+    }
+
     nexttexte.style.backgroundColor = "#fee082";
     nexttexte.style.color = "black";
     nexttexte.style.fontWeight = "bold";
