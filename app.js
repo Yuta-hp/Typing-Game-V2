@@ -1,3 +1,5 @@
+document.location.href = "https://yuta-hp.github.io/Typing-hiroba/"
+
 function GetShuffleArray(arr){
     for(var i =arr.length-1 ; i>0 ;i--){
         var j = Math.floor( Math.random() * (i + 1) ); //random index
